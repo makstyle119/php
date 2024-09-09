@@ -1,31 +1,3 @@
-# PHP
-
-this is my journey to learn and understand PHP
-
-## Folder Structure:
-
-```
-|- php-revision
-  |- src
-    |- 01_output.php
-docker-compose.yml
-Dockerfile
-README.md
-```
-
-- 000/folder-structure
-```
-Nothing much just basic folder structure
-```
-
-- php-revision/src/01_output.php
-  - `echo` most common thing use for printing (specially for debugging) - with `echo` you can print multiple values using as comma separated values - only string and numbers
-  - `print` same as `echo` but only print single value
-  - `print_r()` use a lot with arrays
-  - `var_dump()` against use a lot with array but can use with anything - return type as well
-  - `var_export()` similar with `var_dump()` but not as efficient as `var_dump()` is
-  - `<?= 'Some Text' ?>` single line only - same as `echo`
-```
 <?php // This is a php tag. If there is no html or other content below the php, we don't need to close the php tag.
 
   // echo 'hello World';
@@ -73,7 +45,3 @@ Nothing much just basic folder structure
   </h1>
 </body>
 </html>
-
-```
-
-## Code Explaining
