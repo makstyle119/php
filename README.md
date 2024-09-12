@@ -13,6 +13,8 @@ Dockerfile
 README.md
 ```
 
+## Code Explaining
+
 - 000/folder-structure
 ```
 Nothing much just basic folder structure
@@ -189,4 +191,11 @@ echo HOST;
     var_dump(json_encode($people));
 ```
 
-## Code Explaining
+## Style Guide
+- `//` this is a single line comment = use for single line comments
+- `/*
+    this is a multi-line
+    comment
+  */` = use for multi line comments
+- `kabab case` is recommended in `PHP`, eg: my_app.
+- `PHP` ignore `white spaces` so you can hit the enter button as much as you want - ( not recommended )
