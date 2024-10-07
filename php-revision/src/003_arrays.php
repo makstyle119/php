@@ -33,3 +33,5 @@
 
     // convert an array into json
     var_dump(json_encode($people));
+
+?>

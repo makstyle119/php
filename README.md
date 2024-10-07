@@ -293,6 +293,22 @@ switch($fav_color) // switch case are same as if else here you start with passin
 ?>
 ```
 
+## Logical Operators
+- `<` = less than
+-  `>` = greater than
+-  `<=` = less than or equal to
+-  `>=` = greater than or equal to
+-  `==` = equal to
+-  `===` = identical to
+-  `!` = not comparison
+-  `!=` = mot equal to
+-  `!==` = not identical to
+-  `?` = (in ternary operator) if
+-  `:` = (in ternary operator) else
+-  `??` = or comparison
+-  `&&` = and comparison
+-  `||` = or comparison
+
 ## Style Guide
 - `//` this is a single line comment = use for single line comments
 - `/*

@@ -26,7 +26,7 @@ if (condition) {
 
 $age = 20;
 
-if ($age > 18) 
+if ($age > 18) // check if the statement is true
 {
     echo 'you are old enough' + "\n";
 } 
@@ -75,3 +75,5 @@ switch($fav_color) // switch case are same as if else here you start with passin
         echo 'I don\'t recognized your favorite color';
         break;
 }
+
+?>

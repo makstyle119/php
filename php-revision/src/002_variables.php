@@ -50,3 +50,5 @@ echo "<br />";
 define('HOST', 'localhost'); // never change
 
 echo HOST;
+
+?>
