@@ -28,22 +28,22 @@ $age = 20;
 
 if ($age > 18) // check if the statement is true
 {
-    echo 'you are old enough' + "\n";
+    echo 'you are old enough' . "\n";
 } 
 elseif ($age < 100) // elseif is adding a second or more conditions
 {
-    echo 'too much old' + "\n";
+    echo 'too much old' . "\n";
 } 
 else // else is a default which will run if no condition match
 {
-    echo 'you are not old enough' + "\n";
+    echo 'you are not old enough' . "\n";
 }
 
 $sports = ['Cricket'];
 
 if (empty($sports)) // empty is a built in function to check is array is empty or not 
 {
-    echo 'no sports exist' + "\n";
+    echo 'no sports exist' . "\n";
 }
 
 /* -------- Ternary Operator -------- */
@@ -53,9 +53,9 @@ if (empty($sports)) // empty is a built in function to check is array is empty o
         condition ? true : false;
 */
 
-echo empty($sports) ? 'no sports exist' :  $sports[0] + "\n";
+echo empty($sports) ? 'no sports exist' :  $sports[0] . "\n";
 
-echo empty($sports) && 'no sports exist' + "\n";
+echo empty($sports) && 'no sports exist' . "\n";
 
 $first_post = $sports[0] ?? null; //  ?? will check for first value if not exist add second value
 
