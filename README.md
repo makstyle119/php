@@ -16,6 +16,7 @@ this is my journey to learn and understand PHP
     |- 007_array_functions.php
     |- 008_string_functions.php
     |- 009_super_globals.php
+    |- 010_get_post.php
 docker-compose.yml
 Dockerfile
 README.md
@@ -777,6 +778,45 @@ printf('1 + 1 = %f', 1 + 1); // float
 
 </html>
 ```
+
+- php-revision/src/010_get_post.php
+```
+<?php
+/* --- $_GET & $_POST Superglobals -- */
+
+/*
+    We can pass data through urls and forms using the $_GET and $_POST superglobals.
+*/
+
+// echo $_GET['name'] . '<br/>';
+// echo $_GET['age'] . '<br/>';
+
+if ($_POST['submit'])
+{
+    echo $_POST['name'] . '<br/>';
+    echo $_POST['age'] . '<br/>';
+}
+
+
+?>
+
+<a href="<?php echo $_SERVER['PHP_SELF']; ?>?name=MAK&age=22">
+    Click
+</a>
+
+<form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
+    <div>
+        <label for="name">Name: </label>
+        <input type="text" name="name" />
+    </div>
+    <div>
+        <label for="age">Age: </label>
+        <input type="text" name="age" />
+    </div>
+    <input type="submit" value="submit" name="submit">
+</form>
+```
+
 ## Logical Operators
 - `<` = less than
 -  `>` = greater than
