@@ -18,6 +18,7 @@ this is my journey to learn and understand PHP
     |- 009_super_globals.php
     |- 010_get_post.php
     |- 011_sanitizing_inputs.php
+    |- 012_cookies.php
 docker-compose.yml
 Dockerfile
 README.md
@@ -818,7 +819,7 @@ if ($_POST['submit'])
 </form>
 ```
 
-- php-revision/src/011_sanitizing_inputs
+- php-revision/src/011_sanitizing_inputs.php
   - `htmlspecialchars()` // Convert special characters to HTML entities
   - `filter_var()` // Sanitize data
   - `filter_input()` // Sanitize inputs
@@ -828,6 +829,7 @@ if ($_POST['submit'])
     - `FILTER_SANITIZE_NUMBER_INT` // Convert string to an integer
     - `FILTER_SANITIZE_NUMBER_FLOAT` // Convert string to a float
     - `FILTER_SANITIZE_FULL_SPECIAL_CHARS` // HTML-encodes special characters, keeps spaces and most other characters
+
 ```
 <?php
 /* --- Sanitizing Inputs -- */
@@ -878,6 +880,29 @@ if (isset($_POST['submit'])) {
 <br>
     <input type="submit" name="submit" value="Submit">
 </form>
+```
+
+- php-revision/src/012_cookies.php
+  - `$_COOKIE` // get cookie
+  - `setcookie('name', 'MAK', time() + 86400);` // set a cookie - first parameter is name second is value and third is expiry - time() = current time (86400 second are equal to one minute)
+```
+<?php
+/* ------------- Cookies ------------ */
+
+/*
+    Cookies are a mechanism for storing data in the remote browser and thus tracking or identifying return users. You can set specific data to be stored in the browser, and then retrieve it when the user visits the site again.
+*/
+
+setcookie('name', 'MAK', time() + 86400); // set a cookie - first parameter is name second is value and third is expiry - time() = current time (86400 second are equal to one minute)
+
+if (isset($_COOKIE('name')))
+{
+    echo $_COOKIE('name');
+}
+
+setcookie('name', '', time() - 86400)
+
+?>
 ```
 
 ## Logical Operators
