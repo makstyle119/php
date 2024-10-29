@@ -20,6 +20,7 @@ this is my journey to learn and understand PHP
     |- 011_sanitizing_inputs.php
     |- 012_cookies.php
     |- 013_sessions.php
+    |- 014_file_handling.php
 docker-compose.yml
 Dockerfile
 README.md
@@ -961,6 +962,42 @@ if (isset($_POST['submit'])) {
     <br>
     <input type="submit" name="submit" value="Submit">
 </form>
+```
+
+- php-revision/src/014_file_handling.php
+  - `file_exists` // if file exist
+  - `fopen` // open a file - required file path and permission - 'r' Read | 'w' Write
+  - `fread` // read a file;
+  - `fclose` // close a file
+  - `fwrite` // write a file
+
+```
+<?php
+
+/* ---------- File Handling --------- */
+
+/* 
+    File handling is the ability to read and write files on the server.
+    PHP has built in functions for reading and writing files.
+*/
+
+$file = 'some_path/users.txt';
+
+if (file_exists($file))
+{
+    // echo readfile($file);
+    $handle = fopen($file, 'r');
+    $contents = fread($handle, filesize($file));
+    fclose($handle);
+    echo $contents;
+} else {
+    $handle = fopen($file, 'w');
+    $contents = 'MAK' . PHP_EOL . 'MARIA' . PHP_EOL  . 'ALI';
+    fwrite($handle, $contents);
+    fclose($handle);
+}
+
+?>
 ```
 
 ## Logical Operators
