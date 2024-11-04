@@ -22,6 +22,7 @@ this is my journey to learn and understand PHP
     |- 013_sessions.php
     |- 014_file_handling.php
     |- 015_file_upload.php
+    |- 016_exception.php
 docker-compose.yml
 Dockerfile
 README.md
@@ -1066,6 +1067,46 @@ if(isset($_POST['submit'])) {
 </form>
 </body>
 </html>
+```
+
+- php-revision/src/016_exception.php
+  - `throw new Exception` // add a new error
+  - `try` // we will try things here - code which we want to run
+  - `catch (Exception $e)` // only if code break it will get here
+  - `finally` // always run no matter what you do in try or catch - optional
+```
+<?php
+
+/* ----------- Exceptions ----------- */
+
+/*
+    PHP has an exception model similar to that of other programming languages. An exception can be thrown, and caught ("catched") within PHP. Code may be surrounded in a try block, to facilitate the catching of potential exceptions. Each try must have at least one corresponding catch or finally block.
+*/
+
+function inverse($x)
+{
+    if (!$x) 
+    {
+        throw new Exception('Division by zero');
+    }
+
+    return 1/$x;
+}
+
+
+try {
+    echo inverse(5);
+    echo inverse(0);
+} catch (Exception $e) {
+    echo 'Catch Exception' . $e->getMessage(). ' ';
+} finally {
+    echo 'first finally';
+}
+
+echo 'hello world';
+
+?>
+
 ```
 
 ## Logical Operators
