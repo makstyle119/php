@@ -1193,6 +1193,10 @@ echo $employ1->get_title();
 
 ```
 
+- `includes` // use to include a file - no error if file not found
+- `require` // use to include a file - error if file not found
+- `require_one` // use to include a file - if already include then doesn't include twice
+
 ## Logical Operators
 - `<` = less than
 -  `>` = greater than
@@ -1217,3 +1221,4 @@ echo $employ1->get_title();
   */` = use for multi line comments
 - `kabab case` is recommended in `PHP`, eg: my_app.
 - `PHP` ignore `white spaces` so you can hit the enter button as much as you want - ( not recommended )
+- `inc` use for component folder
