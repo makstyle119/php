@@ -1,3 +1,6 @@
+<?php
+  include('../config/database.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,7 +19,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-         <li class="nav-item">
+          <li class="nav-item">
               <a class="nav-link" href="/php-crash/feedback/index.php">Home</a>
             </li>
             <li class="nav-item">
