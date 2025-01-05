@@ -1222,3 +1222,7 @@ echo $employ1->get_title();
 - `kabab case` is recommended in `PHP`, eg: my_app.
 - `PHP` ignore `white spaces` so you can hit the enter button as much as you want - ( not recommended )
 - `inc` use for component folder
+
+## Resources
+I start my journey using this cool stuff so shout to them:
+- https://www.youtube.com/watch?v=BUCiSSyIGGU
