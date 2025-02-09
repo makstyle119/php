@@ -5,25 +5,25 @@ this is my journey to learn and understand PHP
 ## Folder Structure:
 
 ```
-|- php-revision
-  |- src
-    |- 001_output.php
-    |- 002_variables.php
-    |- 003_arrays.php
-    |- 004_conditionals.php
-    |- 005_loops.php
-    |- 006_functions.php
-    |- 007_array_functions.php
-    |- 008_string_functions.php
-    |- 009_super_globals.php
-    |- 010_get_post.php
-    |- 011_sanitizing_inputs.php
-    |- 012_cookies.php
-    |- 013_sessions.php
-    |- 014_file_handling.php
-    |- 015_file_upload.php
-    |- 016_exception.php
-    |- 017_oop.php
+├── 📂 php-revision
+    ├── 📂 src
+      |- 001_output.php
+      |- 002_variables.php
+      |- 003_arrays.php
+      |- 004_conditionals.php
+      |- 005_loops.php
+      |- 006_functions.php
+      |- 007_array_functions.php
+      |- 008_string_functions.php
+      |- 009_super_globals.php
+      |- 010_get_post.php
+      |- 011_sanitizing_inputs.php
+      |- 012_cookies.php
+      |- 013_sessions.php
+      |- 014_file_handling.php
+      |- 015_file_upload.php
+      |- 016_exception.php
+      |- 017_oop.php
 docker-compose.yml
 Dockerfile
 README.md
